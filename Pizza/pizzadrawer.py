@@ -12,7 +12,7 @@ rmax = cmax = float('-inf')
     
 slices = []
     
-fin = open("medium_out.txt","r")
+fin = open("medium_out.txt","r") # ---> !!!! Change "medium_out.txt" with the name of the file you use !!!
    
 for slicenumber in range(int(fin.readline())):
     # r1, c1, r2, c2 = row(int)
