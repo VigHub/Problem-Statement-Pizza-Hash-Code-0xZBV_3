@@ -72,7 +72,6 @@ def tagliaPizza(pizza,H,L,nomeFiledaScrivere):
             if(np.isnan(pizza[i][j])):
                 continue
             for k0,k1,k2 in fun(H,L):
-                #print(i,i+k1,j,j+k2)
                 if isGiustoH(pizza,i,i+k1-1,j,j+k2-1,H) and isGiustoL(pizza,i,i+k1-1,j,j+k2-1,L) and i+k1<=pizza.shape[0] and j+k2<=pizza.shape[1]:
                     print("Fetta %d" %(nFette+1))
                     nFette+=1
